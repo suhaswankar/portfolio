@@ -1,0 +1,617 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,400;1,600&family=Montserrat:wght@200;300;500&display=swap');
+
+*{
+    margin: 0px;
+    padding: 1px;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.7;
+}
+
+
+ul li{
+    list-style: none;
+}
+a{
+    font-size: 0.9rem;
+}
+p, li{
+    font-size: 1.6rem;
+    letter-spacing: 0.15em;
+
+}
+h1, h3{
+    margin-bottom: 0.5em;
+    letter-spacing: 0.15em;
+    font-weight: 500;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0px auto;
+    width: 90%;
+}
+
+
+.md_heading{
+    font-size: 2.2rem;
+}
+.lg_heading{
+    font-size: 3.5rem;
+}
+
+.text_red{
+    color: rgb(206, 78, 78);
+}
+.text_white{
+    color: rgba(247, 221, 221, 0.95);
+}
+.text_black{
+    color: rgb(47, 40, 40);
+}
+
+.text_gray{
+    color: rgb(164, 152, 152);
+}
+
+
+
+.header{
+    position: relative;
+    height: 95vh;
+    border: 2px solid black;
+    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url('../img/leaf.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.navbar{
+    position: fixed;
+    width: 100%;
+}
+.navbar .logo {
+    color: white;
+    float: left;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+li a{
+    color: white;
+    
+}
+.navbar .nav_items{
+    float: right;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    
+    
+    
+}
+
+.navbar .nav_items .nav_itm a{
+    transition: color 0.5s ease-in-out;
+
+}
+
+.navbar .nav_items .nav_itm{
+    display: inline;
+    font-size: 0.2em;
+    padding: 10px;
+    
+}
+
+
+.navbar .nav_items .nav_itm a{
+    text-decoration: none;
+    
+}
+
+.navbar .nav_items .nav_itm a:hover{
+    color: rgb(201, 106, 106);
+    font-weight: bold;
+    border-bottom: 2px solid rgb(201, 106, 106);
+} 
+
+.navbar::after{
+    content: " ";
+    display: block;
+    clear: both;
+}
+/* ################################## header content ###################################3 */
+.header_content{
+   position: absolute;
+   top: 60%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   text-align: center;
+
+}
+h4{
+    padding-bottom: 30px;
+}
+button{
+   
+    padding: 6px 40px;
+    border-radius: 50px;
+  
+
+}
+
+a{
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+}
+a:hover{
+    color: rgb(201, 96, 96);
+}
+
+
+/* ############################## showcase sextion ############################## */
+.fearureshow{
+    
+    background: url('../img/beautiful-nature.jpg');
+    padding: 90px;
+    
+}
+
+
+
+
+.row{
+    height: 200px;
+    box-shadow: 5px 5px 30px rgb(67, 57, 57);
+}
+
+.row1{
+    margin: 15px;
+}
+    
+.row2{
+    margin: 15px;
+}
+
+.row1 .img_box, .row2 .text_box{
+    float: left;
+    width: 50%;
+
+}
+
+.row2 .img_box, .row1 .text_box{
+    float: right;
+    width: 50%;
+    
+
+}
+
+.row .img_box{
+    
+    height: 100%;
+}
+
+.row .text_box{
+    background-color: white;
+    padding: 1.5rem;
+    background-size: cover;
+    height: 100%;
+    
+    
+    
+}
+.row .img_box img{
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+h2{
+    font-size: 10px;
+    
+
+}
+p{
+    font-size: 10px;
+    color: rgb(74, 70, 70);
+    padding-top: 10px;
+    text-align: left;
+    text-align: justify;
+}
+
+
+.row1{
+    margin-left: 180px;
+}
+
+.row2{
+    margin-right: 180px;
+}
+
+.row::after{
+    content: "" ;
+    display: block;
+    clear: both;
+}
+
+
+
+/* ############################## section 2 #########################################3 */
+
+.feature{
+   padding: 0px 0px;
+   
+}
+
+.feature_box{
+   
+    margin: 100px;
+    box-shadow: 5px 5px 30px 0px rgb(79, 77, 77);
+
+    
+}
+
+.box{
+    float: left;
+    width: 33.33%;
+    padding: 2rem;
+    height: 17rem;
+    text-align: center;
+    color: white;
+   
+
+    
+}
+
+.feature_box::after{
+    content: " ";
+    clear: both;
+    display: block;
+}
+
+.box_1,.box_3,.box_5{
+    background-color: #263238;
+   
+    
+    
+}
+
+.box_2,.box_4,.box_6{
+    background-color: #fc0362;
+}
+
+.feature p{
+    color: white;
+}
+
+
+
+/* ##################### footer ######################################################## */
+
+.foot{
+    background: #3c4c54;
+    color: white;
+    padding: 1.5rem;
+    text-align: center;
+}
+.social_links i{
+    margin: 10px;
+}
+
+.copyright h5{
+    font-size: 8px;
+}
+
+
+/* ############################## about page ###################################3 */
+
+.bg_header{
+    background-color: #48585f;
+    opacity: 0.9;
+    
+}
+
+body{
+   background-image: url('/img/bg.jpg');
+}
+
+.about_section{
+    margin: 100px;
+   
+    
+}
+
+.whoweare{
+    margin: 100px;
+    color: rgb(16, 16, 16);
+    
+}
+.whatwedo{
+    margin: 100px;
+    color: rgb(15, 14, 14);
+}
+h4{
+    font-size: 40px;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.about_section h3{
+    padding-bottom: 30px;
+    font-size: 30px;
+    font-weight: bold;
+    
+}
+
+.about_section p{
+    line-height: 30px;
+    color: rgb(6, 5, 5);
+    border-left: 2px solid red;
+    padding-left: 30px;
+   
+}
+
+.heading_about{
+    border-bottom: 5px solid #fc0362;
+    margin-bottom: 30px;
+}
+
+
+/* ########################### banner ################################ */
+
+.banner{
+  
+    color: white;  
+    background: #fc0362;
+    margin-left: 210px;
+    margin-right: 210px;
+    padding: 10px;
+    
+}
+
+.banner_left{
+    width: 60%;
+    float: left;
+    
+}
+
+.banner_right{
+    width: 30%;
+    float: right;
+}
+
+.banner::after{
+    content: " ";
+    display: block;
+    clear: both;
+}
+
+.btn{
+    text-align: center;
+    display: inline-block;
+    font-weight: 700;
+    font-size: 1rem;
+    border: 2px solid white;
+    padding: 0.3rem 1.5rem;
+    color: white;
+}
+
+.btn:hover{
+    color: black;
+}
+
+
+
+    
+
+/* ############################## contact #################################3 */
+
+.contact_form{
+    padding: 4rem 0rem;
+  
+    
+}
+.form_wrapper{
+   
+    margin: 50px;
+    background-color: rgb(152, 184, 244);
+    
+}
+
+.form_wrapper .company_address{
+    height: 660px;
+    float: left;
+    width: 50%;
+    padding: 20px;
+    
+}
+
+.company_address .address_group{
+    padding: 20px;
+}
+
+.form_wrapper::after{
+    content: " ";
+    display: block;
+    clear: both;
+}
+
+.address_group i,h2{
+    display: inline-block;
+    font-size: 10px;
+}
+
+.contact_form img{
+    width: 100%;
+    height: 45%;
+    object-fit:cover;
+    
+}
+.form_wrapper .form{
+    height: 660px;
+    font-size: 1.2rem;
+    float: right;
+    width: 50%;
+    padding: 30px;
+}
+
+.form_wrapper input,textarea{
+    display: block;
+    width: 100%;
+}
+
+.form_wrapper .form .form_group{
+    margin-bottom: 1.2rem;
+   
+
+}
+
+.form_wrapper .form label::after{
+    content: "* ";
+    color: red;
+}
+
+.form_wrapper.form ,textarea{
+    height: 200px;
+    padding: 10px;
+   
+}
+
+.form_btn{
+    display: block;
+    margin: 0 auto;
+    padding: 0.5rm 3em;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    background: rgb(246, 232, 232);
+    outline: none;
+    border: none;
+    cursor: pointer;
+
+
+}
+ .form_btn:hover{
+    color: #fc0362;
+ }
+
+ .form p{
+    padding-top: 10px;
+    padding-bottom: 10px;
+ }
+
+ .form_wrapper .form label{
+    display: block;
+ }
+
+
+/* ############################## media query ###################################3 */
+
+@media(max-width:800px){
+    html{
+        font-size: 8px;
+
+    }
+
+    .navbar .nav_items, .navbar .logo{
+        float: none;
+        display: block;
+        width: 100%;
+        text-align: center;
+
+    }
+
+    .row{
+        height: auto;
+        width: 100%;
+        margin: auto;
+        padding: 10px;
+       
+    }
+
+    .row .img_box, .row .text_box{
+        float: none;
+        width: 100%;
+        text-align: center;
+        
+
+    }
+
+    .feature .box{
+        float: none;
+        width: 100%;
+        text-align: center;
+       
+        
+    }
+
+    .feature .box_1, .feature .box_2, .feature .box_3, .feature .box_4, .feature .box_5, .feature .box_6{
+      margin-top: 5rem;
+      display:block;
+      text-align: center;
+
+        
+    }
+
+    .feature p,h2{
+        text-align: center;
+        font-size:5px;
+    }
+
+   .about_section, .whatwedo ,.whoweare{
+    width: 100%;
+    margin: 0px;
+    text-align: center;
+    
+   }
+
+   .about_section .banner_left .banner_right{
+    float: none;
+    text-align: center;
+    margin: 0px;
+   }
+
+
+   .form_wrapper .form{
+    float: none;
+    width: 100%;
+    height: auto;
+    margin: 1px;
+   
+   }
+
+   .form_wrapper img{
+    width: 100px;
+    height: 100px;
+   }
+
+   .form_wrapper p{
+    font-size: 7px;
+   }
+
+}
+
+@media(orientation:landscape) and (max-width:500px){
+    .header{
+        height: 90vmax;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
